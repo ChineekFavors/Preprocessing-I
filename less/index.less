@@ -62,11 +62,81 @@ html, body {
 
 	//varibles
 //colors
-@Malibu: #7CAAF8; //background color
-@Mindaro: #D5F778; //font-color
-
+@malibu: #7CAAF8; //background color
+@mindaro: #D5F778; //font-color
 
 /* my code section. */
+
+header{
+
+	
+	nav{
+	display: flex;
+	justify-content: center;
+	border: 2px solid black;
+
+	  a{
+	   text-decoration: none;
+	   color: @malibu;
+	    border: 1px solid black;
+	    margin: 10px 10px;
+	  }
+	}
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+	margin-left: 16rem;
+	background-color: @malibu;
+	color: @mindaro;
+	width: 62.5%;
+
+	.content{
+		border: 2px solid black;
+		display: flex;
+		flex-direction: column;
+
+
+		h1{
+		      font-size: 2.6rem;
+    border: 2px solid black;
+    width: 35%;
+    margin-left: 6rem;
+    margin-top: 6rem;
+		}
+
+		div{
+		border: 2px solid black;
+		position: relative;
+    		bottom: 5rem;
+		   margin-left: 37rem;
+    	   padding: 20px;
+
+    	   img{
+    	   	transform: rotate(-90deg);
+    		position: relative;
+    		bottom: 2rem;
+    		border-radius: 3rem;
+    	   }
+		}
+	}
+
+	.container2{
+	border: 2px solid black;
+	
+		h2{
+		  border: 2px solid black;
+	      margin-left: 25rem;
+	      font-size: 2rem;
+	      margin-bottom: 2rem;
+		}
+		p{
+		  font-size: 1.3rem;
+		}
+	}
+}
+
 
 
 
