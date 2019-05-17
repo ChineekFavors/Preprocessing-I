@@ -74,6 +74,11 @@ html, body {
 	margin: 0 auto;
 	max-width: 800px; 	
 }
+.flex(){
+	display: flex;
+	flex-direction: column;
+	.center;
+}
 
 
 
@@ -103,8 +108,7 @@ header{
 }
 
 .main-container{
-	display: flex;
-	flex-direction: column;
+	
 	.center;
 	
 	.content{
@@ -130,7 +134,7 @@ header{
 	.container2{
 		display: flex;
 		flex-direction: column;;
-		border: 2px solid black;
+		
 
 		.about{
 			display: flex;
@@ -166,10 +170,55 @@ header{
     			color: @mindaro;
 		  	   
 			}
-
 			
+		} //skills section
+
+		.work{
+			.about();
+			
+
+			ul{
+			    list-style-type: disc;
+    			font-size: 1.2rem;
+    			line-height: 2.2rem;
+    			
+    			color: @mindaro;
+		  	   
+			}
+
+		}//work history section
+
+		.contact{
+			.flex;
+
+			h2{
+		  		font-size: 1.4rem;
+    	  		text-align: center;
+    	  		color: @mindaro;
+    	  		margin-top: 10px;
+			}
+
 		}
-	}	
+		.address{
+			text-align: center;
+			
+			color: @mindaro;
+			line-height: 1.2rem;
+			margin-top: 12px;
+
+			a{
+			 text-decoration: none;
+			 font-size: 1.2rem;
+			 &:hover{
+			 	color: @mindaro;
+
+			 }
+			}
+		}
+
+	}//container2
+
+	
 }
 
 

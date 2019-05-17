@@ -155,8 +155,6 @@ header nav a:hover {
   transition: 500ms;
 }
 .main-container {
-  display: flex;
-  flex-direction: column;
   background-color: #7CAAF8;
   margin: 0 auto;
   max-width: 800px;
@@ -180,7 +178,6 @@ header nav a:hover {
 .main-container .container2 {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
 }
 .main-container .container2 .about {
   display: flex;
@@ -237,5 +234,54 @@ header nav a:hover {
   list-style-type: disc;
   font-size: 1.2rem;
   line-height: 2.2rem;
+  color: #D5F778;
+}
+.main-container .container2 .work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px dashed #D5F778;
+  padding: 25px 30px;
+}
+.main-container .container2 .work h2 {
+  font-size: 1.4rem;
+  color: #D5F778;
+  margin-bottom: 10px;
+}
+.main-container .container2 .work p {
+  color: #D5F778;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.main-container .container2 .work ul {
+  list-style-type: disc;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #D5F778;
+}
+.main-container .container2 .contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #7CAAF8;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.main-container .container2 .contact h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #D5F778;
+  margin-top: 10px;
+}
+.main-container .container2 .address {
+  text-align: center;
+  color: #D5F778;
+  line-height: 1.2rem;
+  margin-top: 12px;
+}
+.main-container .container2 .address a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.main-container .container2 .address a:hover {
   color: #D5F778;
 }
