@@ -65,85 +65,112 @@ html, body {
 @malibu: #7CAAF8; //background color
 @mindaro: #D5F778; //font-color
 
-/* my code section. */
+//fonts sizes
+@headingFonts: 1.8rem;
+
+//mixins
+.center(){
+	background-color: @malibu;
+	margin: 0 auto;
+	max-width: 800px; 	
+}
+
+
+
+/* my code goes here */
 
 header{
-
-	
-	nav{
 	display: flex;
-	justify-content: center;
-	border: 2px solid black;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 5px;
 
-	  a{
-	   text-decoration: none;
-	   color: @malibu;
-	    border: 1px solid black;
-	    margin: 10px 10px;
-	  }
-	}
+    nav{
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      a{
+      text-decoration: none;
+      color: @malibu;
+
+      	&:hover{
+      	color: @mindaro;
+      	transition: 500ms;
+      	}
+      }
+
+    }
 }
 
 .main-container{
 	display: flex;
 	flex-direction: column;
-	margin-left: 16rem;
-	background-color: @malibu;
-	color: @mindaro;
-	width: 62.5%;
-
+	.center;
+	
 	.content{
-		border: 2px solid black;
 		display: flex;
-		flex-direction: column;
+	  	flex- direction: row;
+	  	justify-content: space-evenly;
+	  	align-items : center;
+	  	border-bottom: 2px dashed @mindaro;
+	  	padding: 25px 30px;
 
+	  	img{
+	  	  border: 2px dashed @mindaro;
+	  	  transform: rotate(270deg)
+	  	}
 
-		h1{
-		      font-size: 2.6rem;
-    border: 2px solid black;
-    width: 35%;
-    margin-left: 6rem;
-    margin-top: 6rem;
-		}
-
-		div{
-		border: 2px solid black;
-		position: relative;
-    		bottom: 5rem;
-		   margin-left: 37rem;
-    	   padding: 20px;
-
-    	   img{
-    	   	transform: rotate(-90deg);
-    		position: relative;
-    		bottom: 2rem;
-    		border-radius: 3rem;
-    	   }
-		}
-	}
+	  	h1{
+	  
+	  	  font-size: @headingFonts;
+	  	  color: @mindaro;
+	    }
+	}// end of content section
 
 	.container2{
-	border: 2px solid black;
-	
-		h2{
-		  border: 2px solid black;
-	      margin-left: 25rem;
-	      font-size: 2rem;
-	      margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;;
+		border: 2px solid black;
+
+		.about{
+			display: flex;
+			flex-direction: column;
+			 align-items: center;
+			border-bottom: 2px dashed @mindaro;
+		  	padding: 25px 30px;
+
+		  	h2{
+		  	 font-size: 1.4rem;
+		  	 color: @mindaro;
+		  	 margin-bottom: 10px;
+		  	}
+		  	p{
+		  	  color: @mindaro;
+		  	   font-size: 1.2rem;
+		  	   text-align: center;
+		  	}
+		}// about section
+
+		.intro{
+			.about();	
 		}
-		p{
-		  font-size: 1.3rem;
+
+		.skills{
+			.about();
+
+			ul{
+			    list-style-type: disc;
+    			font-size: 1.2rem;
+    			line-height: 2.2rem;
+    			
+    			color: @mindaro;
+		  	   
+			}
+
+			
 		}
-	}
+	}	
 }
-
-
-
-
-
-
-
-
 
 
 
